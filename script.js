@@ -1,47 +1,57 @@
-// document.getElementById("count-el").innerText = 5;
+// // document.getElementById("count-el").innerText = 5;
 
-// let count = 0;
-// count = count + 1;
-// console.log(count);
+// // let count = 0;
+// // count = count + 1;
+// // console.log(count);
 
-//initialize the count as 0
-//listen for clicks on the increment button
-//increment the coount variable when the button us cliced
-//change the count-el in the HTML to reflect the new count
-    
+// //initialize the count as 0
+// //listen for clicks on the increment button
+// //increment the coount variable when the button us cliced
+// //change the count-el in the HTML to reflect the new count
+
+// 1. Grab the save-el paragraph and store it in a variable called saveEl
+
 let countEl = document.getElementById("count-el")
 
 let count = 0
 
 function increment(){
-    count = count + 1
+    count++
     countEl.innerText = count
 }
 
-// 1. create a function, save(), which logs out the count when it's called
+// // 1. create a function, save(), which logs out the count when it's called
 
-function save(){
+let saveEl=document.getElementById("save-el")
 
+function save(count){ 
+    // 2. Create a variable that contains both the count and the dash seperator, i.e. "12 - "
+    // 3. Render the variabl in the saveEL using innerText
+    // NB: Make sure to not delete the existing content of the paragraph
+    let rawSaveEl = count + " - "
+    saveEl.innerText
+    console.log(count)
 }
 
-// Grab the welcome-el paragraph and store it in a variable called welcomeEl
+// // // Grab the welcome-el paragraph and store it in a variable called welcomeEl
 
-// Create two variables (name & greeting) that contains your name
-// and the greeting we want to render on the page
+// // // Create two variables (name & greeting) that contains your name
+// // // and the greeting we want to render on the page
 
-// Render the welcome message using welcomeEl.innerText
+// // // Render the welcome message using welcomeEl.innerText
 
-let welcomeEl = document.getElementById(welcome-el);
+// // let welcomeEl = document.getElementById(welcome-el);
 
-let myName="Deniz"
+// // let myName="Deniz"
 
-function yourName(name){
-    return name;
-}
+// // function yourName(name){
+// //     return name;
+// // }
 
-function greeting(name){
-    // return "Welcome dear "+ name;
+// // function greeting(name){
+// //     return "Welcome dear "+ name;   
+// // }
 
-    
+// // let greeting = document.getElementById("welcomeEL").innerText = greeting(myName);
 
-}
+
