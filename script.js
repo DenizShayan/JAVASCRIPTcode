@@ -17,20 +17,20 @@ let count = 0
 
 function increment(){
     count++
-    countEl.innerText = count
+    countEl.textContent = count
 }
 
 // // 1. create a function, save(), which logs out the count when it's called
 
 let saveEl=document.getElementById("save-el")
 
-function save(count){ 
+function save(){ 
     // 2. Create a variable that contains both the count and the dash seperator, i.e. "12 - "
     // 3. Render the variabl in the saveEL using innerText
     // NB: Make sure to not delete the existing content of the paragraph
     let rawSaveEl = count + " - "
-    saveEl.innerText
-    console.log(count)
+    saveEl.textContent += rawSaveEl 
+    
 }
 
 // // // Grab the welcome-el paragraph and store it in a variable called welcomeEl
@@ -54,4 +54,9 @@ function save(count){
 
 // // let greeting = document.getElementById("welcomeEL").innerText = greeting(myName);
 
+let resetEl=document.getElementById("reset-btn")
 
+function reset(){
+    count--
+    resetEl.textContent = count    
+}
